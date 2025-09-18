@@ -1,0 +1,164 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Enhanced Design System with New Color Palette */
+
+@layer base {
+  :root {
+    /* Enhanced Color System */
+    --sustainable-green: #0f5132;
+    --slate-gray: #334155;
+    --soft-sand: #fefae0;
+    --accent-blue: #60a5fa;
+
+    /* shadcn/ui variables mapped to enhanced theme */
+    --background: 0 0% 100%;
+    --foreground: 210 9% 13%;
+
+    --card: 0 0% 98%;
+    --card-foreground: 210 9% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 9% 13%;
+
+    --primary: 152 84% 15%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 214 100% 69%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 45 100% 96%;
+    --muted-foreground: 215 25% 27%;
+
+    --accent: 45 100% 96%;
+    --accent-foreground: 152 84% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 214 100% 69%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 152 84% 15%;
+    --foreground: 0 0% 98%;
+    --card: 152 84% 15%;
+    --card-foreground: 0 0% 98%;
+    --popover: 152 84% 15%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 152 84% 15%;
+    --secondary: 214 100% 69%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+  /* Enhanced Typography System */
+  .neo-brand {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(24px, 4vw, 32px);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .neo-h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(36px, 6vw, 48px);
+    font-weight: 700;
+    letter-spacing: 0.2px;
+  }
+
+  .neo-h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(28px, 4vw, 32px);
+    font-weight: 600;
+    letter-spacing: 0.1px;
+  }
+
+  .neo-h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(22px, 3vw, 24px);
+    font-weight: 500;
+  }
+
+  .neo-body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: clamp(16px, 2vw, 18px);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .neo-caption {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .neo-button {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(14px, 2vw, 16px);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* Marquee Animation */
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .marquee {
+    animation: marquee 30s linear infinite;
+  }
+
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Enhanced Hover Effects */
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+}
