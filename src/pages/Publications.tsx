@@ -110,7 +110,7 @@ const Publications = () => {
             <p className="mb-6">
               All the accepted paper will be published in the proceedings of ComSIA 2026 by Springer (Approved) indexed in reputed databases like Scopus, EI, WoS and many more. The associated journal to consider the high-quality extended papers.:
             </p>
-            <div className="flex justify-center gap-10">
+            {/* <div className="flex justify-center gap-10">
                <img 
               src="/ieee-logo.png" 
               alt="IEEE Logo" 
@@ -121,7 +121,7 @@ const Publications = () => {
               alt="IEEE CIS Logo" 
               className="h-20 md:h-24 w-auto"
             />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
