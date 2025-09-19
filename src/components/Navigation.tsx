@@ -60,9 +60,9 @@ const Navigation = () => {
             <a href="/committee" className="text-slate-gray hover:text-sustainable-green transition-colors font-inter font-medium">
               Committee
             </a>
-            <a href="/venue" className="text-slate-gray hover:text-sustainable-green transition-colors font-inter font-medium">
+            {/* <a href="/venue" className="text-slate-gray hover:text-sustainable-green transition-colors font-inter font-medium">
               Venue
-            </a>
+            </a> */}
             <a href="/downloads" className="text-slate-gray hover:text-sustainable-green transition-colors font-inter font-medium">
               Downloads
             </a>

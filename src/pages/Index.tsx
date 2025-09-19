@@ -27,9 +27,9 @@ const Index = () => {
         <section className="mb-16">
           <div className="bg-soft-sand rounded-lg p-8">
             <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-4 text-center">ICSTSS-2026 will be organised in Hybrid Mode</h2>
-            <p className="text-2xl text-slate-gray font-ibm-plex text-center">
+            {/* <p className="text-2xl text-slate-gray font-ibm-plex text-center">
               Organized by Jaypee University Anoopshahr, UP, India in association with SAGE University, Indore, India
-            </p>
+            </p> */}
           </div>
         </section>
 

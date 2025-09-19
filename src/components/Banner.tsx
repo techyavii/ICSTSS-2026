@@ -73,11 +73,11 @@ const Banner = () => {
             </div>
             <div className="neo-h3 mb-2 text-white max-md:text-base md:text-3xl">(ICSTSS-2026)</div>
             <div className="neo-body font-semibold text-white max-md:text-sm md:text-xl mb-1">
-              October 25-26th, 2025 | Mode: HYBRID
+              June 5-6th, 2026 | Mode: HYBRID
             </div>
-            <div className="neo-body font-semibold text-white max-md:text-xs md:text-lg">
+            {/* <div className="neo-body font-semibold text-white max-md:text-xs md:text-lg">
               Organized by: Jaypee University Anoopshahr, UP, India in association with SAGE University, Indore, India
-            </div>
+            </div> */}
           </div>
 
           {/* Right Logos */}
